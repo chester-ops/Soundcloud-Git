@@ -1415,6 +1415,9 @@
   margin-right: 10px;
   font-size: 12px;
 }
+.soundcloud-footer .container.inner-wrapper{
+  padding-top: 0px;
+}
 
 .soundcloud-footer__container {
   padding: 15px 0px;
