@@ -1,0 +1,1585 @@
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.row-cols-auto > * {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.row-cols-1 > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.row-cols-2 > * {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.row-cols-3 > * {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+.row-cols-4 > * {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.row-cols-5 > * {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.row-cols-6 > * {
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .col-sm {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-sm-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .row-cols-sm-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .row-cols-sm-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row-cols-sm-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .row-cols-sm-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .row-cols-sm-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .row-cols-sm-6 > * {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .col-sm-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-sm-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-sm-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-sm-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-sm-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-sm-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-sm-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .col-md {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-md-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .row-cols-md-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .row-cols-md-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row-cols-md-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .row-cols-md-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .row-cols-md-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .row-cols-md-6 > * {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-md-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-md-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-md-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  
+}
+@media (min-width: 992px) {
+  .col-lg {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-lg-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .row-cols-lg-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .row-cols-lg-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row-cols-lg-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .row-cols-lg-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .row-cols-lg-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .row-cols-lg-6 > * {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-lg-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  
+}
+@media (min-width: 1200px) {
+  .col-xl {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-xl-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .row-cols-xl-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .row-cols-xl-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row-cols-xl-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .row-cols-xl-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .row-cols-xl-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .row-cols-xl-6 > * {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-xl-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-xl-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-xl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-xl-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-xl-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-xl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-xl-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-xl-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+}
+@media (min-width: 1400px) {
+  .col-xxl {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-xxl-auto > * {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .row-cols-xxl-1 > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .row-cols-xxl-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .row-cols-xxl-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .row-cols-xxl-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .row-cols-xxl-5 > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  .row-cols-xxl-6 > * {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .col-xxl-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .col-xxl-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+
+  .col-xxl-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-xxl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-xxl-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+
+  .col-xxl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-xxl-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+
+  .col-xxl-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-xxl-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-xxl-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+
+  .col-xxl-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+
+  .col-xxl-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+ 
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+.align-self-center {
+  align-self: center !important;
+}
+.align-self-stretch {
+  align-self: stretch !important;
+}
+
+
+.text-center {
+  text-align: center !important;
+}
+.btn {
+  padding: 4.2px 15px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+.btn.btn-md {
+  font-size: 16px;
+  height: 40px;
+}
+.btn.btn-lg {
+  font-size: 18px;
+  height: 46px;
+}
+.btn.btn-outline {
+  border: 1px solid #ccc;
+}
+.btn.btn-outline__black {
+  border: 1px solid #e5e5e5;
+  color: #333;
+  transition: border 0.25s;
+}
+.btn.btn-outline__black:hover {
+  border-color: #ccc;
+}
+.btn.btn-primary {
+  background-color: #f50;
+}
+
+.souncloud-trending__song .soundcloud-trending__image {
+  max-width: 180px;
+  /*        &::after{
+
+         } */
+}
+.souncloud-trending__song .soundcloud-trending__image img {
+  max-height: 180px;
+}
+@media (max-width: 991.98px) {
+  .souncloud-trending__song .soundcloud-trending__image {
+    margin: 0 auto;
+  }
+}
+.souncloud-trending__song:hover .song-details {
+  opacity: 1;
+  visibility: visible;
+}
+.souncloud-trending__song.disabled .song-details .song-play__button {
+  opacity: 0.5;
+  cursor: default;
+}
+.souncloud-trending__song.disabled .song-details .song-play__button:hover {
+  background-color: #f50;
+  cursor: default;
+}
+.souncloud-trending__song .soundcloud-link.d-flex {
+  position: relative;
+}
+.souncloud-trending__song .soundcloud-link.d-flex::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.souncloud-trending__song .song-details {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+@media (max-width: 575.98px) {
+  .souncloud-trending__song .song-details {
+    display: none;
+  }
+}
+.souncloud-trending__song .song-details .song-play__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 31%;
+  height: 31%;
+  background-color: #f50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.souncloud-trending__song .song-details .song-play__button:hover {
+  background-color: #f30;
+}
+.souncloud-trending__song .song-details .song-play__button .play-icon {
+  width: 55%;
+  height: 55%;
+  margin-left: 12%;
+}
+.souncloud-trending__song .song-details .song-bottom__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent);
+}
+.souncloud-trending__song .song-details .song-bottom__overlay .song-bottom__right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 5px 5px 10px 0px;
+  display: flex;
+  align-items: center;
+}
+.souncloud-trending__song .song-details .song-bottom__overlay .song-bottom__right .song-bottom__icon {
+  min-width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.souncloud-trending__song .song-details .song-bottom__overlay .song-bottom__right .song-bottom__icon:active svg, .souncloud-trending__song .song-details .song-bottom__overlay .song-bottom__right .song-bottom__icon:focus svg {
+  fill: #ccc;
+}
+.souncloud-trending__song .song-details .song-bottom__overlay .song-bottom__right .song-bottom__icon svg {
+  fill: #fff;
+}
+.souncloud-trending__song .song-title {
+  margin: 4px 0 0 0;
+  max-width: 180px;
+}
+@media (max-width: 991.98px) {
+  .souncloud-trending__song .song-title {
+    margin: 4px auto 0px auto;
+  }
+}
+.souncloud-trending__song .song-title a {
+  font-weight: 100;
+  color: #333;
+  font-size: 14px;
+  display: block;
+  border: 1px solid transparent;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.souncloud-trending__song .song-title a:hover {
+  color: #000;
+}
+.souncloud-trending__song .song-title a:active, .souncloud-trending__song .song-title a:focus {
+  border: 1px dashed #333;
+}
+.souncloud-trending__song .song-title ~ div {
+  max-width: 180px;
+}
+@media (max-width: 991.98px) {
+  .souncloud-trending__song .song-title ~ div {
+    margin: 0 auto;
+  }
+}
+.souncloud-trending__song .song-artist {
+  border: 1px solid transparent;
+  font-size: 12px;
+  color: #999;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.souncloud-trending__song .song-artist:hover, .souncloud-trending__song .song-artist:active, .souncloud-trending__song .song-artist:focus {
+  color: #333;
+}
+.souncloud-trending__song .song-artist:active, .souncloud-trending__song .song-artist:focus {
+  border: 1px dashed #333;
+}
+
+.souncloud-header .container.inner-wrapper {
+  border-top: 4px solid #f50;
+  background-size: 100%;
+  background-color: #000;
+  padding: 0;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-hero__bg {
+  width: 100%;
+  height: 450px;
+  background-image: url("../images/soundcloud-hero.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: inset 0 120px 40px -40px rgba(5, 5, 5, 0.5);
+}
+@media (max-width: 767.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero__bg {
+    height: 350px;
+    background-size: contain;
+    background-image: url("../images/hero-mobile.jpg");
+  }
+}
+.souncloud-header .container.inner-wrapper .header-top__bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  padding: 0 16px;
+  padding-top: 24px;
+}
+@media (min-width: 1200px) {
+  .souncloud-header .container.inner-wrapper .header-top__bar {
+    padding: 24px 24px 0px 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-nav {
+    display: none !important;
+  }
+}
+.souncloud-header .container.inner-wrapper .soundcloud-nav li.soundcloud-nav__item:not(:last-child) {
+  margin-right: 10px;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__btn {
+  display: none;
+  z-index: 20;
+}
+@media (max-width: 767.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-mobile__btn {
+    display: block;
+  }
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__btn.open span.soundcloud-btn__bar {
+  background-color: #333;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__btn.open span.soundcloud-btn__bar:first-child {
+  transform: rotate(-45deg);
+  margin-top: 4px;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__btn.open span.soundcloud-btn__bar:nth-child(2) {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__btn.open span.soundcloud-btn__bar:nth-child(3) {
+  transform: rotate(45deg);
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__btn span.soundcloud-btn__bar {
+  background-color: #fff;
+  border-radius: 1px;
+  transform-origin: 21px;
+  display: block;
+  height: 3px;
+  width: 22px;
+  transition: transform 0.2s, -webkit-transform 0.2s, background-color 0.2s;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__btn span.soundcloud-btn__bar:not(:first-child) {
+  margin-top: 4px;
+}
+.souncloud-header .container.inner-wrapper .mobile-menu__overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  left: 0;
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.35s ease-in-out, opacity 0.25s ease-in-out;
+}
+.souncloud-header .container.inner-wrapper .mobile-menu__overlay.open {
+  visibility: visible;
+  opacity: 1;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  opacity: 0;
+  background-color: #fff;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  width: 440px;
+  z-index: 6;
+  padding: 38px;
+  transition: right 0.35s ease-in-out, opacity 0.25s ease-in-out;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__menu.open {
+  opacity: 1;
+  right: 0;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__menu .mobile-menu__links {
+  margin-top: 96px;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__menu .mobile-menu__links .mobile-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__menu .mobile-menu__links .mobile-menu__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-mobile__menu .mobile-menu__links .mobile-menu__item a {
+  width: 280px;
+  max-width: 100%;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-hero {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 3px rgba(5, 5, 5, 0.4);
+  width: 100%;
+  margin-top: 10px;
+}
+.souncloud-header .container.inner-wrapper .soundcloud-hero__wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero__wrapper {
+    max-width: 350px;
+  }
+}
+@media (max-width: 767.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero__wrapper {
+    max-width: 420px;
+  }
+}
+@media (max-width: 991.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero {
+    position: static;
+    transform: translate(0px);
+    padding: 30px 16px 30px 16px;
+    border-top: 1px solid #5c5c5c;
+    margin-top: 20px;
+  }
+}
+.souncloud-header .container.inner-wrapper .soundcloud-hero .soundcloud-hero__title {
+  font-weight: 100;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+@media (max-width: 991.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero .soundcloud-hero__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero .soundcloud-hero__title {
+    font-size: 22px;
+  }
+}
+.souncloud-header .container.inner-wrapper .soundcloud-hero .soundcloud-hero__subtitle {
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero .soundcloud-hero__subtitle {
+    font-size: 16px;
+  }
+}
+.souncloud-header .container.inner-wrapper .soundcloud-hero .soundcloud-hero__CTA {
+  margin-top: 25px;
+  min-width: 210px;
+}
+@media (max-width: 991.98px) {
+  .souncloud-header .container.inner-wrapper .soundcloud-hero .soundcloud-hero__CTA {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .soundcloud-trending .soundcloud-input__group {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .soundcloud-trending .soundcloud-searchbar__container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767.98px) {
+  .soundcloud-trending .soundcloud-searchbar {
+    width: 100%;
+  }
+}
+.soundcloud-trending .soundcloud-search {
+  background-color: #f2f2f2;
+  height: 46px;
+  padding: 0 16px;
+  font-family: "interstatelight", Verdana, Geneva, Tahoma, sans-serif;
+  width: 600px;
+  font-size: 14px;
+  color: #666;
+  border-radius: 3px;
+}
+@media screen and (max-width: 400px) {
+  .soundcloud-trending .soundcloud-search.main-search {
+    display: none;
+  }
+}
+.soundcloud-trending .soundcloud-search.mobile-search {
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  .soundcloud-trending .soundcloud-search.mobile-search {
+    display: block;
+  }
+}
+.soundcloud-trending .soundcloud-search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.soundcloud-trending .soundcloud-search::placeholder {
+  color: #a6a0a2;
+  font-size: 16px;
+}
+@media (max-width: 991.98px) {
+  .soundcloud-trending .soundcloud-search {
+    width: 500px;
+  }
+}
+@media (max-width: 767.98px) {
+  .soundcloud-trending .soundcloud-search {
+    width: 100%;
+  }
+}
+.soundcloud-trending .soundcloud-submit {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+}
+.soundcloud-trending span.or {
+  display: inline-block;
+  margin: 0 14px;
+}
+@media (max-width: 767.98px) {
+  .soundcloud-trending span.or {
+    margin: 12px 0;
+  }
+}
+.soundcloud-trending .soundcloud-trending__title {
+  margin: 30px 0;
+  font-size: 24px;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .soundcloud-trending .soundcloud-trending__title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .soundcloud-trending .soundcloud-trending__title {
+    font-size: 20px;
+  }
+}
+.soundcloud-trending .soundcloud-trending__songs {
+  row-gap: 30px;
+}
+@media (max-width: 575.98px) {
+  .soundcloud-trending .soundcloud-trending__songs {
+    row-gap: 20px;
+  }
+}
+.soundcloud-trending .explore-more {
+  margin: 40px 0 40px 0px;
+}
+@media (max-width: 575.98px) {
+  .soundcloud-trending .explore-more {
+    margin: 30px 0 30px 0;
+  }
+}
+
+.soundcloud-mobile__app .container.inner-wrapper {
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 1080px) {
+  .soundcloud-mobile__app .row {
+    flex-direction: column-reverse;
+  }
+  .soundcloud-mobile__app .row > * {
+    width: 100%;
+    justify-content: center !important;
+  }
+  .soundcloud-mobile__app .row .col-md-8 {
+    padding-right: 12px;
+  }
+  .soundcloud-mobile__app .row .col-md-4 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  .soundcloud-mobile__app .row .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+.soundcloud-mobile__app .col-md-8 {
+  padding-right: 30px;
+}
+.soundcloud-mobile__app .mobile-app__content {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1080px) {
+  .soundcloud-mobile__app .mobile-app__content {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.soundcloud-mobile__app .mobile-app__content h1 {
+  margin-bottom: 17px;
+  position: relative;
+}
+.soundcloud-mobile__app .mobile-app__content h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-image: linear-gradient(90deg, #7d01a1, #f30 50%, #f50);
+  margin-top: 15px;
+}
+.soundcloud-mobile__app .mobile-app__content p {
+  max-width: 325px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media (max-width: 767.98px) {
+  .soundcloud-mobile__app .mobile-app__content p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .soundcloud-mobile__app .mobile-app__content p {
+    max-width: 100%;
+  }
+}
+.soundcloud-mobile__app .mobile-app__content .mobile-app__links a:not(:last-child) {
+  margin-right: 4px;
+}
+
+.soundcloud-creators {
+  background-color: #000;
+  color: #fff;
+}
+.soundcloud-creators .container.inner-wrapper {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.soundcloud-creators .container.inner-wrapper .row .soundcloud-creators__content {
+  width: 100%;
+  max-width: 520px;
+  padding: 52px 0px 52px 0px;
+}
+@media screen and (max-width: 1080px) {
+  .soundcloud-creators .container.inner-wrapper .row .soundcloud-creators__content {
+    padding: 0px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+.soundcloud-creators .container.inner-wrapper .row .soundcloud-creators__content p {
+  margin: 11px 0 26px 0px;
+}
+@media screen and (max-width: 1080px) {
+  .soundcloud-creators .container.inner-wrapper .row {
+    flex-direction: column;
+  }
+  .soundcloud-creators .container.inner-wrapper .row > * {
+    width: 100%;
+  }
+  .soundcloud-creators .container.inner-wrapper .row > .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .soundcloud-creators .container.inner-wrapper .row > .col-md-6:first-child {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .soundcloud-creators .container.inner-wrapper .row > .col-md-6:nth-child(2) {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .soundcloud-creators .container.inner-wrapper .row > .col-md-6:first-child {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .soundcloud-creators .container.inner-wrapper .row > .col-md-6:first-child {
+    padding-bottom: 30px;
+  }
+}
+.soundcloud-creators .container.inner-wrapper .row .col-md-6:not(:first-child) {
+  padding-right: 0px;
+}
+
+.soundcloud-account__content {
+  padding: 34px 0px;
+}
+@media (max-width: 575.98px) {
+  .soundcloud-account__content {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .soundcloud-account__main--content .soundcloud-account__title {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.soundcloud-account__main--content .soundcloud-account__text {
+  margin: 10px 0px 17px 0px;
+}
+.soundcloud-account__main--content .soundcloud-account__btn {
+  margin-bottom: 10px;
+  min-width: 210px;
+}
+.soundcloud-account .have-account__text {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.soundcloud-footer__container {
+  padding: 15px 0px;
+  border-top: 1px solid #f2f2f2;
+}
+.soundcloud-footer__nav {
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+}
+.soundcloud-footer__nav li {
+  color: #ccc;
+  font-size: 14px;
+}
+.soundcloud-footer__nav li.separator {
+  min-width: 14.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soundcloud-footer__nav li a {
+  color: #ccc;
+  font-weight: 100;
+  border: 1px solid transparent;
+}
+.soundcloud-footer__nav li a:hover {
+  color: #999;
+}
+.soundcloud-footer__nav li a:focus, .soundcloud-footer__nav li a:active {
+  outline: thin dotted;
+}
+.soundcloud-footer__location {
+  margin-top: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+@media (max-width: 575.98px) {
+  .soundcloud-footer__location {
+    margin-bottom: 0px;
+  }
+}
+.soundcloud-footer__location a {
+  color: #333;
+}
+.soundcloud-footer__location a span {
+  color: #38d;
+}
+.soundcloud-footer__location a:hover span {
+  color: #333;
+}
+.soundcloud-footer__location a:active, .soundcloud-footer__location a:focus {
+  outline: 1px dotted #38d;
+}
+
+@font-face {
+  font-family: "interstatelight";
+  src: url("../fonts/Interstate-light.otf") format("opentype");
+}
+*:not(progress) {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "interstatelight", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+body.mobile-menu__open {
+  overflow: hidden;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+svg, span {
+  pointer-events: none;
+}
+
+.container.main-container {
+  max-width: 1240px;
+  padding: 0px !important;
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.container.inner-wrapper {
+  padding: 50px 16px;
+}
+@media (min-width: 1200px) {
+  .container.inner-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container.inner-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+a.link-default {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  height: 30px;
+}
+a.link-default.link-black {
+  color: #333;
+}
+a.link-default.link-lg {
+  height: 46px;
+  font-size: 18px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.section-content__title {
+  font-size: 36px;
+  font-weight: 100;
+}
+@media (max-width: 767.98px) {
+  .section-content__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-content__title {
+    font-size: 24px;
+  }
+}
+
+.section-content__text {
+  font-size: 24px;
+}
+@media (max-width: 767.98px) {
+  .section-content__text {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-content__text {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

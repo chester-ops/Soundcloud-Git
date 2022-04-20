@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream and listen to music online for free with SoundCloud</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/souncloud-favicon.ico" />
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Preload-->
+    <link rel="preload" href="assets/fonts/Interstate-Light.otf" as="font" type="font/opentype" crossorigin>
+    <!-- Hero Image Preload -->
+    <link rel="preload" as="image" href="assets/images/soundcloud-hero.jpg">
+    <!-- Mobile Preload -->
+    <link rel="preload" as="image" href="assets/images/soundcloud-mobile.jpg">
+    <!-- Logo Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-cloud.svg">
+    <link rel="preload" as="image" href="assets/images/logo-text.png">
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <div class="container main-container">
+            <!-- Souncloud Header -->
+            <section class="souncloud-header" id="soundcloud-header">
+                <div class="container inner-wrapper position-relative">
+                    <!-- Background-img -->
+                    <div class="soundcloud-hero__bg"></div>
+                        <!-- Header Top Bar-->
+                        <div class="header-top__bar d-flex align-items-center justify-content-between">
+                            <!-- Souncloud Logo-->
+                            <div class="header-top__left">
+                                <a href="#" class="d-flex logo-link align-items-center">
+                                    <span class="logo-cloud d-inline-flex">
+                                        <img src="assets/images/logo-cloud.svg" alt="logo-cloud" class="img-fluid" height="22px" width="48px">
+                                    </span>
+                                    <span class="logo-text d-inline-flex">
+                                        <img src="assets/images/logo-text.png" alt="logo-text" class="img-fluid">
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /Souncloud Logo-->
+                            <!-- Soundcloud Nav-->
+                            <div class="header-top__right d-flex align-items-center justify-content-between">
+                                <ul class="soundcloud-nav d-flex align-items-center justify-content-between">
+                                    <li class="soundcloud-nav__item">
+                                        <a href="#" class="btn-outline btn">
+                                            Sign in
+                                        </a>
+                                    </li>
+                                    <li class="soundcloud-nav__item">
+                                        <a href="#" class="btn btn-primary">
+                                            Create account
+                                        </a>
+                                    </li>
+                                    <li class="soundcloud-nav__item">
+                                        <a href="#" class="link-default">
+                                            For Creators
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Mobile Button-->
+                                <button class="soundcloud-mobile__btn">
+                                    <span class="soundcloud-btn__bar"></span>
+                                    <span class="soundcloud-btn__bar"></span>
+                                    <span class="soundcloud-btn__bar"></span>
+                                </button>
+                                <!-- /Mobile Button-->
+                            </div>
+                            <!-- /Soundcloud Nav-->
+                        </div>
+                        <!-- /Header Top Bar-->
+                        <!-- Soundcloud Hero-->
+                        <div class="soundcloud-hero text-center" id="soundcloud-hero">
+                            <div class="soundcloud-hero__wrapper">
+                                <h1 class="soundcloud-hero__title">
+                                    Connect on SoundCloud
+                                </h1>
+                                <p class="soundcloud-hero__subtitle">
+                                    Discover, stream, and share a constantly expanding mix of music from emerging and major artists around the world.
+                                </p>
+                                <a href="#" class="btn btn-primary btn-lg soundcloud-hero__CTA">
+                                    Sign up for free
+                                </a>
+                            </div>
+                        </div>
+                    <!-- /Soundcloud Hero-->
+                    <!-- Mobile Menu-->
+                    <div class="mobile-menu__overlay">
+                    </div>
+                    <div class="soundcloud-mobile__menu">
+                        <ul class="mobile-menu__links">
+                            <li class="mobile-menu__item">
+                                <a href="#" class="btn btn-outline btn-outline__black btn-lg">
+                                    Sign in
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="btn btn-primary btn-lg">
+                                    Create account
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a href="#" class="link-default link-lg link-black">
+                                    For Creators
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /Mobile Menu-->
+                </div>
+            </section>
+            <!-- /Soundcloud Header-->
+            <!-- Soundcloud Trending-->
+            <section class="soundcloud-trending " id="soundcloud-trending">
+                <div class="container inner-wrapper background-white">
+                    <!-- Soundcloud Search -->
+                    <div class="soundcloud-searchbar__container d-flex align-items-center justify-content-center">
+                        <form action="#" class="soundcloud-searchbar">
+                            <div class="soundcloud-input__group position-relative">
+                                <!-- Main Search-->
+                                <input type="search" name="search" id="search" class="soundcloud-search main-search" placeholder="Search for artists, bands, tracks, podcasts">
+                                <!-- /Main Search-->
+                                <!-- Mobile Search-->
+                                <input type="search" name="search" id="search" class="soundcloud-search mobile-search" placeholder="Search...">
+                                <!-- /Mobile Search-->
+                                <button type="submit" class="soundcloud-submit d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <span class="or">or</span>
+                        <a href="#" class="btn btn-lg btn-primary">Upload your own</a>
+                    </div>
+                    <!-- /Soundcloud Search-->
+                    <!-- Soundcloud Trending-->
+                    <div class="soundcloud-trending__container">
+                        <h2 class="soundcloud-trending__title text-center fw-100">
+                            Hear what’s trending for free in the SoundCloud community
+                        </h2>
+                        <!-- Soundcloud Songs Container -->
+                        <ul class="soundcloud-trending__songs row">
+                            <!-- Soundcloud Song-->
+                            <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6">
+                                    <div class="soundcloud-trending__image position-relative">
+                                        <a href="#" class="soundcloud-link d-flex ">
+                                            <img src="assets/images/8D-version.jpg" alt="song-image" class="img-fluid">
+                                        </a>
+                                        <!-- Song Details-->
+                                        <a href="#" class="song-details">
+                                            <div class="song-play__button">
+                                                <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                            </div>
+                                            <div class="song-bottom__overlay d-flex ">
+                                                <div class="song-bottom__right">
+                                                    <button class="song-bottom__like song-bottom__icon">
+                                                        <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                            <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                                <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button  class="song-bottom__user song-bottom__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                          </svg>
+                                                    </button>
+                                                    <button  class="song-bottom__more song-bottom__icon">
+                                                        <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                              <circle cx="2" cy="2" r="2"/>
+                                                              <circle cx="7" cy="2" r="2"/>
+                                                              <circle cx="12" cy="2" r="2"/>
+                                                            </g>
+                                                          </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- /Song Details-->
+                                    </div>
+                                    <h3 class="song-title"> 
+                                        <a href="#" class="soundcloud-link">
+                                            8D Version - البخت
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex">
+                                        <a href="#" class="d-inline-block song-artist">    
+                                            ويجز                             
+                                        </a>
+                                    </div>
+                            </li>
+                            <!-- /Soundcloud Song-->
+                            <!-- Soundcloud Song-->
+                            <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled">
+                                <div class="soundcloud-trending__image position-relative">
+                                    <a href="#" class="soundcloud-link d-flex">
+                                        <img src="assets/images/in-my-head.jpg" alt="song-image" class="img-fluid">
+                                    </a>
+                                    <!-- Song Details-->
+                                    <a href="#" class="song-details">
+                                        <div class="song-play__button">
+                                            <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                        </div>
+                                        <div class="song-bottom__overlay d-flex ">
+                                            <div class="song-bottom__right">
+                                                <button class="song-bottom__like song-bottom__icon">
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                        <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                            <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <button  class="song-bottom__user song-bottom__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                      </svg>
+                                                </button>
+                                                <button  class="song-bottom__more song-bottom__icon">
+                                                    <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                          <circle cx="2" cy="2" r="2"/>
+                                                          <circle cx="7" cy="2" r="2"/>
+                                                          <circle cx="12" cy="2" r="2"/>
+                                                        </g>
+                                                      </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- /Song Details-->
+                                </div>
+                                <h3 class="song-title"> 
+                                    <a href="#" class="soundcloud-link">
+                                        In My Head
+                                    </a>
+                                </h3>
+                                <div class="d-flex">
+                                    <a href="#" class="d-inline-block song-artist">       
+                                        Lil Tjay                    
+                                    </a>
+                                </div>
+                        </li>
+                        <!-- /Soundcloud Song-->
+                            <!-- Soundcloud Song-->
+                            <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled">
+                                <div class="soundcloud-trending__image position-relative">
+                                    <a href="#" class="soundcloud-link d-flex">
+                                        <img src="assets/images/what-happened-to-virgil.jpg" alt="song-image" class="img-fluid">
+                                    </a>
+                                    <!-- Song Details-->
+                                    <a href="#" class="song-details">
+                                        <div class="song-play__button">
+                                            <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                        </div>
+                                        <div class="song-bottom__overlay d-flex ">
+                                            <div class="song-bottom__right">
+                                                <button class="song-bottom__like song-bottom__icon">
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                        <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                            <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <button  class="song-bottom__user song-bottom__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                      </svg>
+                                                </button>
+                                                <button  class="song-bottom__more song-bottom__icon">
+                                                    <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                          <circle cx="2" cy="2" r="2"/>
+                                                          <circle cx="7" cy="2" r="2"/>
+                                                          <circle cx="12" cy="2" r="2"/>
+                                                        </g>
+                                                      </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- /Song Details-->
+                                </div>
+                                <h3 class="song-title"> 
+                                    <a href="#" class="soundcloud-link">
+                                        What Happened To Virgil (feat. Gunna)
+                                    </a>
+                                </h3>
+                                <div class="d-flex">
+                                    <a href="#" class="d-inline-block song-artist">
+                                        Lil Durk
+                                    </a>
+                                </div>
+                        </li>
+                        <!-- /Soundcloud Song-->
+                            <!-- Soundcloud Song-->
+                            <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled">
+                                <div class="soundcloud-trending__image position-relative">
+                                    <a href="#" class="soundcloud-link d-flex">
+                                        <img src="assets/images/money-so-big.jpg" alt="song-image" class="img-fluid">
+                                    </a>
+                                    <!-- Song Details-->
+                                    <a href="#" class="song-details">
+                                        <div class="song-play__button">
+                                            <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                        </div>
+                                        <div class="song-bottom__overlay d-flex ">
+                                            <div class="song-bottom__right">
+                                                <button class="song-bottom__like song-bottom__icon">
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                        <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                            <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <button  class="song-bottom__user song-bottom__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                      </svg>
+                                                </button>
+                                                <button  class="song-bottom__more song-bottom__icon">
+                                                    <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                          <circle cx="2" cy="2" r="2"/>
+                                                          <circle cx="7" cy="2" r="2"/>
+                                                          <circle cx="12" cy="2" r="2"/>
+                                                        </g>
+                                                      </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- /Song Details-->
+                                </div>
+                                <h3 class="song-title"> 
+                                    <a href="#" class="soundcloud-link">
+                                        Monëy so big
+                                    </a>
+                                </h3>
+                                <div class="d-flex">
+                                    <a href="#" class="d-inline-block song-artist">
+                                        Yeat
+                                    </a>
+                                </div>
+                        </li>
+                        <!-- /Soundcloud Song-->
+                          <!-- Soundcloud Song-->
+                          <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled">
+                            <div class="soundcloud-trending__image position-relative">
+                                <a href="#" class="soundcloud-link d-flex">
+                                    <img src="assets/images/never-broke-again.jpg" alt="song-image" class="img-fluid">
+                                </a>
+                                <!-- Song Details-->
+                                <a href="#" class="song-details">
+                                    <div class="song-play__button">
+                                        <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                    </div>
+                                    <div class="song-bottom__overlay d-flex ">
+                                        <div class="song-bottom__right">
+                                            <button class="song-bottom__like song-bottom__icon">
+                                                <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                    <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                        <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button  class="song-bottom__user song-bottom__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                  </svg>
+                                            </button>
+                                            <button  class="song-bottom__more song-bottom__icon">
+                                                <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                      <circle cx="2" cy="2" r="2"/>
+                                                      <circle cx="7" cy="2" r="2"/>
+                                                      <circle cx="12" cy="2" r="2"/>
+                                                    </g>
+                                                  </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- /Song Details-->
+                            </div>
+                            <h3 class="song-title"> 
+                                <a href="#" class="soundcloud-link">
+                                    YoungBoy Never Broke Again - I Hate YoungBoy
+                                </a>
+                            </h3>
+                            <div class="d-flex">
+                                <a href="#" class="d-inline-block song-artist">       
+                                    YoungBoy                     
+                                </a>
+                            </div>
+                    </li>
+                    <!-- /Soundcloud Song-->
+                            <!-- Soundcloud Song-->
+                            <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6" >
+                                <div class="soundcloud-trending__image position-relative">
+                                    <a href="#" class="soundcloud-link d-flex">
+                                        <img src="assets/images/super-gremlins.jpg" alt="song-image" class="img-fluid">
+                                    </a>
+                                    <!-- Song Details-->
+                                    <a href="#" class="song-details">
+                                        <div class="song-play__button">
+                                            <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                        </div>
+                                        <div class="song-bottom__overlay d-flex ">
+                                            <div class="song-bottom__right">
+                                                <button class="song-bottom__like song-bottom__icon">
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                        <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                            <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <button  class="song-bottom__user song-bottom__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                      </svg>
+                                                </button>
+                                                <button  class="song-bottom__more song-bottom__icon">
+                                                    <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                          <circle cx="2" cy="2" r="2"/>
+                                                          <circle cx="7" cy="2" r="2"/>
+                                                          <circle cx="12" cy="2" r="2"/>
+                                                        </g>
+                                                      </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- /Song Details-->
+                                </div>
+                                <h3 class="song-title"> 
+                                    <a href="#" class="soundcloud-link">
+                                        Super Gremlin
+                                    </a>
+                                </h3>
+                                <div class="d-flex">
+                                    <a href="#" class="d-inline-block song-artist">
+                                        Kodak Black
+                                    </a>
+                                </div>
+                        </li>
+                        <!-- /Soundcloud Song-->
+                                   <!-- Soundcloud Song-->
+                                   <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled" >
+                                    <div class="soundcloud-trending__image position-relative">
+                                        <a href="#" class="soundcloud-link d-flex">
+                                            <img src="assets/images/first-class.jpg" alt="song-image" class="img-fluid">
+                                        </a>
+                                        <!-- Song Details-->
+                                        <a href="#" class="song-details">
+                                            <div class="song-play__button">
+                                                <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                            </div>
+                                            <div class="song-bottom__overlay d-flex ">
+                                                <div class="song-bottom__right">
+                                                    <button class="song-bottom__like song-bottom__icon">
+                                                        <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                            <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                                <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button  class="song-bottom__user song-bottom__icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                          </svg>
+                                                    </button>
+                                                    <button  class="song-bottom__more song-bottom__icon">
+                                                        <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                              <circle cx="2" cy="2" r="2"/>
+                                                              <circle cx="7" cy="2" r="2"/>
+                                                              <circle cx="12" cy="2" r="2"/>
+                                                            </g>
+                                                          </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- /Song Details-->
+                                    </div>
+                                    <h3 class="song-title"> 
+                                        <a href="#" class="soundcloud-link">
+                                            Jack Harlow - First Class
+                                        </a>
+                                    </h3>
+                                    <div class="d-flex">
+                                        <a href="#" class="d-inline-block song-artist">
+                                            Jack Harlow
+                                        </a>
+                                    </div>
+                            </li>
+                            <!-- /Soundcloud Song-->
+                              <!-- Soundcloud Song-->
+                              <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6" >
+                                <div class="soundcloud-trending__image position-relative">
+                                    <a href="#" class="soundcloud-link d-flex">
+                                        <img src="assets/images/running-away.jpg" alt="song-image" class="img-fluid">
+                                    </a>
+                                    <!-- Song Details-->
+                                    <a href="#" class="song-details">
+                                        <div class="song-play__button">
+                                            <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                        </div>
+                                        <div class="song-bottom__overlay d-flex ">
+                                            <div class="song-bottom__right">
+                                                <button class="song-bottom__like song-bottom__icon">
+                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                        <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                            <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <button  class="song-bottom__user song-bottom__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                      </svg>
+                                                </button>
+                                                <button  class="song-bottom__more song-bottom__icon">
+                                                    <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                          <circle cx="2" cy="2" r="2"/>
+                                                          <circle cx="7" cy="2" r="2"/>
+                                                          <circle cx="12" cy="2" r="2"/>
+                                                        </g>
+                                                      </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- /Song Details-->
+                                </div>
+                                <h3 class="song-title"> 
+                                    <a href="#" class="soundcloud-link">
+                                        running away.
+                                    </a>
+                                </h3>
+                                <div class="d-flex">
+                                    <a href="#" class="d-inline-block song-artist">
+                                        Zzz.
+                                    </a>
+                                </div>
+                        </li>
+                        <!-- /Soundcloud Song-->
+                          <!-- Soundcloud Song-->
+                          <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6" >
+                            <div class="soundcloud-trending__image position-relative">
+                                <a href="#" class="soundcloud-link d-flex">
+                                    <img src="assets/images/yamma.jpg" alt="song-image" class="img-fluid">
+                                </a>
+                                <!-- Song Details-->
+                                <a href="#" class="song-details">
+                                    <div class="song-play__button">
+                                        <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                    </div>
+                                    <div class="song-bottom__overlay d-flex ">
+                                        <div class="song-bottom__right">
+                                            <button class="song-bottom__like song-bottom__icon">
+                                                <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                    <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                        <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                            <button  class="song-bottom__user song-bottom__icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                                  </svg>
+                                            </button>
+                                            <button  class="song-bottom__more song-bottom__icon">
+                                                <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                      <circle cx="2" cy="2" r="2"/>
+                                                      <circle cx="7" cy="2" r="2"/>
+                                                      <circle cx="12" cy="2" r="2"/>
+                                                    </g>
+                                                  </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- /Song Details-->
+                            </div>
+                            <h3 class="song-title"> 
+                                <a href="#" class="soundcloud-link">
+                                    على لوكا - متخافيش ياما ( ولا فارقه معايا الناس مين سالك مين بصاص )
+                                </a>
+                            </h3>
+                            <div class="d-flex">
+                                <a href="#" class="d-inline-block song-artist">
+                                    ولا فارقة معايا الناس  مين سالك مين بصاص
+                                </a>
+                            </div>
+                    </li>
+                    <!-- /Soundcloud Song-->
+                     <!-- Soundcloud Song-->
+                     <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled" >
+                        <div class="soundcloud-trending__image position-relative">
+                            <a href="#" class="soundcloud-link d-flex">
+                                <img src="assets/images/in-a-minute.jpg" alt="song-image" class="img-fluid">
+                            </a>
+                            <!-- Song Details-->
+                            <a href="#" class="song-details">
+                                <div class="song-play__button">
+                                    <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                                </div>
+                                <div class="song-bottom__overlay d-flex ">
+                                    <div class="song-bottom__right">
+                                        <button class="song-bottom__like song-bottom__icon">
+                                            <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                                <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                    <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button  class="song-bottom__user song-bottom__icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                              </svg>
+                                        </button>
+                                        <button  class="song-bottom__more song-bottom__icon">
+                                            <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                                  <circle cx="2" cy="2" r="2"/>
+                                                  <circle cx="7" cy="2" r="2"/>
+                                                  <circle cx="12" cy="2" r="2"/>
+                                                </g>
+                                              </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- /Song Details-->
+                        </div>
+                        <h3 class="song-title"> 
+                            <a href="#" class="soundcloud-link">
+                                Lil Baby - In A Minute
+                            </a>
+                        </h3>
+                        <div class="d-flex">
+                            <a href="#" class="d-inline-block song-artist">
+                                Lil Baby
+                            </a>
+                        </div>
+                </li>
+                <!-- /Soundcloud Song-->
+                 <!-- Soundcloud Song-->
+                 <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled" >
+                    <div class="soundcloud-trending__image position-relative">
+                        <a href="#" class="soundcloud-link d-flex">
+                            <img src="assets/images/right-on.jpg" alt="song-image" class="img-fluid">
+                        </a>
+                        <!-- Song Details-->
+                        <a href="#" class="song-details">
+                            <div class="song-play__button">
+                                <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                            </div>
+                            <div class="song-bottom__overlay d-flex ">
+                                <div class="song-bottom__right">
+                                    <button class="song-bottom__like song-bottom__icon">
+                                        <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                            <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                                <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <button  class="song-bottom__user song-bottom__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                          </svg>
+                                    </button>
+                                    <button  class="song-bottom__more song-bottom__icon">
+                                        <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                              <circle cx="2" cy="2" r="2"/>
+                                              <circle cx="7" cy="2" r="2"/>
+                                              <circle cx="12" cy="2" r="2"/>
+                                            </g>
+                                          </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /Song Details-->
+                    </div>
+                    <h3 class="song-title"> 
+                        <a href="#" class="soundcloud-link">
+                            Lil Baby - Right On
+                        </a>
+                    </h3>
+                    <div class="d-flex">
+                        <a href="#" class="d-inline-block song-artist">
+                            Lil Baby
+                        </a>
+                    </div>
+            </li>
+            <!-- /Soundcloud Song-->
+             <!-- Soundcloud Song-->
+             <li class="souncloud-trending__song col-lg-2 col-md-3 col-sm-4 col-6 disabled" >
+                <div class="soundcloud-trending__image position-relative">
+                    <a href="#" class="soundcloud-link d-flex">
+                        <img src="assets/images/sleazy-flow.jpg" alt="song-image" class="img-fluid">
+                    </a>
+                    <!-- Song Details-->
+                    <a href="#" class="song-details">
+                        <div class="song-play__button">
+                            <img src="assets/images/play.svg" alt="play-icon" class="img-fluid play-icon">
+                        </div>
+                        <div class="song-bottom__overlay d-flex ">
+                            <div class="song-bottom__right">
+                                <button class="song-bottom__like song-bottom__icon">
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                        <g id="Page-1" stroke="none" stroke-width="1"  sketch:type="MSPage">
+                                            <path d="M10.8049818,3 C8.78471579,3 8.00065285,5.34486486 8.00065285,5.34486486 C8.00065285,5.34486486 7.21296387,3 5.19604494,3 C3.49431318,3 1.748374,4.09592694 2.03008996,6.51430532 C2.37372765,9.46673775 7.75491917,12.9928738 7.99310958,13.0010557 C8.23129998,13.0092378 13.7309828,9.2785378 13.981459,6.5012405 C14.1878647,4.20097023 12.5067136,3 10.8049818,3 Z" id="Imported-Layers"  sketch:type="MSShapeGroup"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <button  class="song-bottom__user song-bottom__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 16 16">
+                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                      </svg>
+                                </button>
+                                <button  class="song-bottom__more song-bottom__icon">
+                                    <svg width="16px" height="px" viewBox="0 0 14 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                                          <circle cx="2" cy="2" r="2"/>
+                                          <circle cx="7" cy="2" r="2"/>
+                                          <circle cx="12" cy="2" r="2"/>
+                                        </g>
+                                      </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- /Song Details-->
+                </div>
+                <h3 class="song-title"> 
+                    <a href="#" class="soundcloud-link">
+                        Sleazy Flow
+                    </a>
+                </h3>
+                <div class="d-flex">
+                    <a href="#" class="d-inline-block song-artist">
+                        SleazyWorld Go
+                    </a>
+                </div>
+        </li>
+        <!-- /Soundcloud Song-->
+                        </ul>
+                        <!-- /Soundcloud Songs Container-->
+                        <!-- Explore More-->
+                        <div class="d-flex align-items-center justify-content-center explore-more">
+                            <a href="#" class=" btn btn-primary btn-lg">Explore trending playlists</a>
+                        </div>
+                        <!-- /Explore More-->
+                    </div>
+                </div>
+            </section>
+            <!-- /Soundcloud Trending-->
+            <!-- Soundcloud Mobile App-->
+            <section class="soundcloud-mobile__app" id="soundcloud-mobile__app">
+                <div class="container inner-wrapper">
+                    <div class="row ">
+                        <div class="col-md-8 d-flex justify-content-end">
+                            <img src="assets/images/soundcloud-mobile.jpg" alt="soundcloud-mobile" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 d-flex flex-column ">
+                            <!-- Mobile App Content-->
+                            <div class="mobile-app__content">
+                                <h1 class="soundcloud-mobile__title section-content__title">
+                                    Never stop listening
+                                </h1>
+                                <p class="soundcloud-mobile__text section-content__text">
+                                    SoundCloud is available on Web, iOS, Android, Sonos, Chromecast, and Xbox One.
+                                </p>
+                                <div class="mobile-app__links">
+                                    <a href="#" class="mobile-app__appstore d-inline-block">
+                                        <img src="assets/images/appstore-img.png" alt="appstore" class="img-fluid">
+                                    </a>
+                                    <a href="#" class="mobile-app__playstore d-inline-block">
+                                        <img src="assets/images/playstore-img.png" alt="playstore" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /Mobile App Content-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Soundcloud Mobile App-->
+            <section class="soundcloud-creators">
+                <div class="container inner-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 d-flex  justify-content-end">
+                            <div class="soundcloud-creators__content">
+                                <h1 class="soundcloud-creators__heading section-content__title">
+                                    Calling all creators
+                                </h1>
+                                <p class="soundcloud-creators__text section-content__text">
+                                    Get on SoundCloud to connect with fans, share your sounds, and grow your audience. What are you waiting for?
+                                </p>
+                                <a href="#" class="btn btn-lg btn-outline">Find out more</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/images/soundcloud-creators.jpg" alt="soundcloud-img" class="soundcloud-creators__img img-fluid" >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Soundcloud creators-->
+            <!-- Soundcloud Account-->
+            <section class="soundcloud-account background-white" id="soundcloud-account">
+                <div class="container inner-wrapper">
+                    <div class="soundcloud-account__content">
+                        <div class="soundcloud-account__main--content text-center">
+                            <h1 class="soundcloud-account__title section-content__title">
+                                Thanks for listening. Now join in.
+                            </h1>
+                            <p class="soundcloud-account__text section-content__text">
+                                Save tracks, follow artists and build playlists. All for free.
+                            </p>
+                            <a href="#" class="btn btn-primary btn-lg soundcloud-account__btn">
+                                Create account
+                            </a>
+                        </div>
+                        <div class="have-account d-flex align-items-center justify-content-center">
+                            <p class="have-account__text">
+                                Already have an account?
+                            </p>
+                            <a href="#" class="btn btn-md btn-outline btn-outline__black ">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Soundcloud Account-->
+            <!-- Soundcloud Footer-->
+            <section class="soundcloud-footer background-white" id="soundcloud-footer">
+                <div class="container inner-wrapper">
+                    <div class="soundcloud-footer__container">
+                        <ul class="soundcloud-footer__nav d-flex align-items-center justify-content-start">
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Directory
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Creator Resources
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Jobs
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Developers
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Help
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Legal
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Cookie Policy
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Consent Manager
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Imprint
+                                </a>
+                            </li>
+                            <li class="soundcloud-footer__item separator">
+                                -
+                            </li>
+                            <li class="soundcloud-footer__item">
+                                <a href="#" class="soundcloud-footer__link">
+                                    Charts
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="soundcloud-footer__location">
+                            <a href="#" class="soundcloud-footer__location--link">
+                                <span class="link-blue">Language:</span>
+                                English (US)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Soundcloud Footer-->
+        </div>
+    </div>
+    
+<!-- Main Javascript File -->
+<script src="assets/js/soundcloud.js"></script>
+</body>
+</html>
