@@ -1470,7 +1470,7 @@
 
 @font-face {
   font-family: "interstatelight";
-  src: url("../fonts/Interstate-light.otf") format("opentype");
+  src: url("../fonts/Interstate-Light.woff2") format("woff2");
 }
 *:not(progress) {
   box-sizing: border-box;
